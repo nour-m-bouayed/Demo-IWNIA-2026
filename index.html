@@ -19,19 +19,19 @@
 		<script src="js/jquery.dropotron.min.js"></script>
 		<script src="js/skel.min.js"></script>
 				<script>
-				{
-					prefix: 'css/style';
-					preloadStyleSheets: true;
-					resetCSS: true;
-					boxModel: 'border';
-					grid: { gutters: 30 };
+								skel.init({
+					prefix: 'css/style',
+					preloadStyleSheets: true,
+					resetCSS: true,
+					boxModel: 'border',
+					grid: { gutters: 30 },
 					breakpoints: {
-						wide: { range: '1200-'; containers: 1140; grid: { gutters: 50 } };
-						narrow: { range: '481-1199'; containers: 960 };
-						mobile: { range: '-480'; containers: 'fluid'; lockViewport: true; grid: { collapse: true } }
+						wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+						narrow: { range: '481-1199', containers: 960 },
+						mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
 					}
-				}
-				</script>
+				});
+								</script>
 		<script>
 			$(function() {
 
@@ -107,7 +107,7 @@
 						<strong><span style="font-size: large;"><a name="abstract"></a>Abstract</span></strong>
 						<hr>
 
-						<table width="80%">
+						<table width="100%">
 						<tr>
 						<td style="width: 50%; text-align: justify; vertical-align: top;">
 							Beamforming techniques are widely used in hearing aids to improve the signal-to-noise ratio. In a multi-speaker scenario, it is common to assume that the speech signals associated with each speaker do not overlap in the time-frequency domain. This so-called W-disjoint orthogonality assumption allows us to reduce the complexity of the beamforming algorithm. However, its validity decreases in presence of more than two speakers. In this study, we propose a beamforming algorithm relying on a less restrictive assumption regarding the sparsity of speech signals in the time-frequency domain. Its implications over the noise reduction performance and the computational complexity are discussed and compared with the Linearly Constrained Minimum Variance (LCMV) and the Minimum Variance Distortionless Response (MVDR) beamformers. We show that the proposed algorithm improves the noise reduction performance and reduces the computational cost compared to the LCMV beamformer without increasing the artifacts amount unlike the MVDR beamformer. </td>
@@ -130,38 +130,38 @@
 						<p>You can listen to audio examples of an auditory scene composed of three speech sources located on the horizontal plane at -45, 0 and 45°, respectively, and a cafeteria noise at an SNR of 5 dB.<p/>
 
 						<!-- </center> -->
-						<table style="font-size: 80%";>
+						<table style="font-size: 100%";>
 						<tr>
 							<th>Ideally clean speech sources</th>
 							<th>Noisy mixture</th>
 						</tr>
 						<tr>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Ideal.wav"></audio></td>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Ideal.wav"></audio></td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
 						</tr>
 						</table>
 
 
-						<table style="font-size: 80%";>
+						<table style="font-size: 100%";>
 						<tr>
 							<th></th>
 							<th>Speech locations @ azimuths: -45, 0, 45°</th>
 						</tr>
 						<tr>
-							<td style="width: 80%; text-align: right; vertical-align: middle; height: 39px;">Original</td>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
+							<td style="width: 100%; text-align: right; vertical-align: middle; height: 39px;">Original</td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width: 80%; text-align: right; vertical-align: middle; height: 39px;">MVDR beamformer</td>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_MVDR.wav"></audio></td>
+							<td style="width: 100%; text-align: right; vertical-align: middle; height: 39px;">MVDR beamformer</td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_MVDR.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width: 80%; text-align: right; vertical-align: middle; height: 39px;">LCMV beamformer</td>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_LCMV.wav"></audio></td>
+							<td style="width: 100%; text-align: right; vertical-align: middle; height: 39px;">LCMV beamformer</td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_LCMV.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width: 80%; text-align: right; vertical-align: middle; height: 39px;">Proposed beamformer</td>
-							<td style="width: 80%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Proposed.wav"></audio></td>
+							<td style="width: 100%; text-align: right; vertical-align: middle; height: 39px;">Proposed beamformer</td>
+							<td style="width: 100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Proposed.wav"></audio></td>
 						</tr>
 						</table>
 						<!-- Acknowledgement -->
