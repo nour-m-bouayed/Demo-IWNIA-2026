@@ -11,7 +11,7 @@
 		  gtag('config', 'UA-109046767-2');
 		</script>
 
-		<title>On Speech Sparsity for Computational Efficiency and Noise Reduction in Hearing Aids</title>
+		<title>[YOUR_PAPER_TITLE]</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
 		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
@@ -89,16 +89,16 @@
 			<!-- Features -->
 				<div class="row">
 					<section class="12u">
-						<h2 style="text-align: center;font-size: 180%;">On Speech Sparsity for Computational Efficiency and Noise Reduction in Hearing Aids</h2>
-						<p style="text-align: center;">Adrien Llave&emsp;&emsp; Simon Leglaive </p>
-						<p style="text-align: center;">CentraleSupélec, IETR, France<br/></p>
-						<p style="text-align: center;">2021 IEEE annual conference organized by Asia-Pacific Signal and Information Processing Association (APSIPA)</p>
+						<h2 style="text-align: center;font-size: 180%;">[YOUR_PAPER_TITLE]</h2>
+						<p style="text-align: center;">[AUTHOR_1]&emsp;&emsp;[AUTHOR_2]</p>
+						<p style="text-align: center;">[YOUR_AFFILIATION]<br/></p>
+						<p style="text-align: center;">[CONFERENCE_OR_JOURNAL]</p>
 						<p style="text-align: center;">
-							<a href="https://hal.archives-ouvertes.fr/hal-03330307/document" target="_blank" rel="noopener">Article</a> | 
-							<a href="#audio">Audio examples</a> | 
-							<a href="demos/documents/slides.pdf">Slides</a> | 
-							<!-- <a href="https://gitlab-research.centralesupelec.fr/sleglaive/icassp-2020-se-rvae" target="_blank" rel="noopener"> Code</a> | -->
-							<a href="https://hal.archives-ouvertes.fr/hal-03330307v1/bibtex" target="_blank" rel="noopener">Bibtex</a> | 
+							<a href="[PAPER_URL]" target="_blank" rel="noopener">Article</a> | 
+							<a href="#audio">Audio examples</a> | 
+							<a href="[SLIDES_URL]">Slides</a> | 
+							<!-- <a href="[CODE_URL]" target="_blank" rel="noopener"> Code</a> | -->
+							<a href="[BIBTEX_URL]" target="_blank" rel="noopener">Bibtex</a> | 
 							<a href="#acknowledgement">Acknowledgement</a>
 						</p>
 
@@ -109,16 +109,17 @@
 						<table width="100%">
 						<tr>
 						<td style="width: 50%; text-align: justify; vertical-align: top;">
-							Beamforming techniques are widely used in hearing aids to improve the signal-to-noise ratio. In a multi-speaker scenario, it is common to assume that the speech signals associated with each speaker do not overlap in the time-frequency domain. This so-called W-disjoint orthogonality assumption allows us to reduce the complexity of the beamforming algorithm. However, its validity decreases in presence of more than two speakers. In this study, we propose a beamforming algorithm relying on a less restrictive assumption regarding the sparsity of speech signals in the time-frequency domain. Its implications over the noise reduction performance and the computational complexity are discussed and compared with the Linearly Constrained Minimum Variance (LCMV) and the Minimum Variance Distortionless Response (MVDR) beamformers. We show that the proposed algorithm improves the noise reduction performance and reduces the computational cost compared to the LCMV beamformer without increasing the artifacts amount unlike the MVDR beamformer. </td>
+							[YOUR_ABSTRACT_TEXT]
+						</td>
 						<td style="width: 2%; text-align: justify;">
 							<!-- EMPTY -->
 						</td>
 						<td style="width: 48%; text-align: justify;">
-							<img class="wp-image-7444 aligncenter" src="demos/documents/example_nbsrc3_overlap.png" alt="" width="500" /></a>
-							Example of the number of active sources in the STFT domain for a mixture of 3 sentences.
+							<img class="wp-image-7444 aligncenter" src="[YOUR_IMAGE_1_PATH]" alt="[IMAGE_1_ALT]" width="500" /></a>
+							[IMAGE_1_CAPTION]
 
-							<img class="wp-image-7444 aligncenter" src="demos/documents/dsdr_vs_nbp_nbstim40.png" alt="" width="500" /></a>
-							SDR improvement versus computational complexity averaged over the examples for an SNR of 0 dB. The ellipses show the standard deviation isovalue of a 2D gaussian distribution fitted over the results for the proposed algorithm with the VAD threshold ranging from -5 to 9 dB with a 2 dB step.
+							<img class="wp-image-7444 aligncenter" src="[YOUR_IMAGE_2_PATH]" alt="[IMAGE_2_ALT]" width="500" /></a>
+							[IMAGE_2_CAPTION]
 						</td>
 						</tr>
 						</table>
@@ -127,17 +128,17 @@
 						<!-- Audio -->
 						<span style="font-size: large;"><a name="audio"></a><strong>Audio examples</strong></span>
 						<hr>
-						<p>You can listen to audio examples of an auditory scene composed of three speech sources located on the horizontal plane at -45, 0 and 45°, respectively, and a cafeteria noise at an SNR of 5 dB.<p/>
+						<p>[AUDIO_DESCRIPTION]<p/>
 
 						<!-- </center> -->
 						<table style="font-size: 100%";>
 						<tr>
-							<th>Ideally clean speech sources</th>
-							<th>Noisy mixture</th>
+							<th>[AUDIO_TABLE_HEADER_1]</th>
+							<th>[AUDIO_TABLE_HEADER_2]</th>
 						</tr>
 						<tr>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Ideal.wav"></audio></td>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_1_PATH]"></audio></td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_2_PATH]"></audio></td>
 						</td>
 						</tr>
 						</table>
@@ -146,30 +147,30 @@
 						<table style="font-size: 100%";>
 						<tr>
 							<th></th>
-							<th>Speech locations @ azimuths: -45, 0, 45°</th>
+							<th>[AUDIO_MAIN_TABLE_HEADER]</th>
 						</tr>
 						<tr>
-							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">Original</td>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
+							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">[METHOD_1_NAME]</td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_METHOD_1_PATH]"></audio></td>
 						</tr>
 						<tr>
-							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">MVDR beamformer</td>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_MVDR.wav"></audio></td>
+							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">[METHOD_2_NAME]</td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_METHOD_2_PATH]"></audio></td>
 						</tr>
 						<tr>
-							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">LCMV beamformer</td>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_LCMV.wav"></audio></td>
+							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">[METHOD_3_NAME]</td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_METHOD_3_PATH]"></audio></td>
 						</tr>
 						<tr>
-							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">Proposed beamformer</td>
-							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Mix.wav"></audio></td>
+							<td style="width:100%; text-align: right; vertical-align: middle; height: 39px;">[METHOD_4_NAME]</td>
+							<td style="width:100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="[AUDIO_METHOD_4_PATH]"></audio></td>
 						</tr>
 						</table>
 						<!-- Acknowledgement -->
 						<strong><span style="font-size: large;"><a name="acknowledgement"></a>Acknowledgement</span></strong>
 						<hr>
 
-						<p>The authors acknowledges the Région Bretagne for funding the HPPA (HRTF pour les prothèses auditives) FEDER project.<p/>
+						<p>[YOUR_ACKNOWLEDGEMENT_TEXT]<p/>
 					</section>
 				</div>
 			</div>
