@@ -125,6 +125,11 @@
 						</tr>
 						</table>
 
+						<!-- Figure -->
+						<div style="text-align: center; margin: 30px 0;">
+							<img src="demos/documents/GTVVCodec_diagram_2.png" alt="Block diagram of the proposed coding method." style="max-width: 100%; height: auto;" />
+							<p style="font-style: italic; margin-top: 10px;">Block diagram of the proposed coding method (ReSRIR Codec)</p>
+						</div>
 
 						<!-- Audio -->
 						<span style="font-size: large;"><a name="audio"></a><strong>Audio examples</strong></span>
@@ -136,55 +141,61 @@
 						<table style="font-size: 100%; border-collapse: collapse; width: 100%; table-layout: fixed;">
 						<tr>
 							<th style="padding: 8px; border: 1px solid #ddd; width: 15%;">Condition</th>
-							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://zenodo.org/records/7990195">50_Lebedev</a></th>
 							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://zenodo.org/records/6382405">Aalto</a></th>
 							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://zenodo.org/records/15093935">IKSLabIR</a></th>
 							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://zenodo.org/records/4923187">Motus</a></th>
 							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://www.mdpi.com/2076-3417/14/5/2095">RSoANU</a></th>
+							<th style="padding: 8px; border: 1px solid #ddd; width: 17%;">SRIR from <a href="https://zenodo.org/records/7990195">50_Lebedev</a></th>
+
 						</tr>
 						<tr>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">Original</td>
-							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/Lebedev.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/Aalto.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/IKSLab.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/MOTUS.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/RSOANU.wav"></audio></td>
+							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/original/Lebedev.wav"></audio></td>
 						</tr>
 						<tr>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">ReSRIRCodec @ 27 kbps (ours)</td>
-							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/Lebedev.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/Aalto.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/IKSLab.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/MOTUS.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/RSOANU.wav"></audio></td>
+							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/ReSRIRCodec/Lebedev.wav"></audio></td>
 						</tr>
 						<tr>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">IVAS @ 32 kbps</td>
-							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/Lebedev.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/Aalto.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/IKSLab.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/MOTUS.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/RSOANU.wav"></audio></td>
+							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 32/Lebedev.wav"></audio></td>
 						</tr>
 						
 						<tr>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center; font-weight: bold;">IVAS @ 64 kbps</td>
-							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/Lebedev.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/Aalto.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/IKSLab.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/MOTUS.wav"></audio></td>
 							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/RSOANU.wav"></audio></td>
+							<td style="padding: 8px; border: 1px solid #ddd; text-align: center;"><audio style="width: 100%; max-width: 180px;" controls="controls" volume="0.8" preload="none" src="demos/audio/IVAS 64/Lebedev.wav"></audio></td>
 						</tr>
 						</table>
 
 						</div>
-
+						<!-- Figure -->
+						<div style="text-align: center; margin: 30px 0;">
+							<img src="demos/documents/qastanet_scores.png" alt="" style="max-width: 100%; height: auto;" />
+							<p style="font-style: italic; margin-top: 10px;">Mean QASTANet spatial audio quality scores on tested models (IVAS and proposed model) and on various testsets (each containing 50 samples). The vertical lines denote the standard deviation. Bar width is proportional to bitrate.</p>
+						</div>
 						<!-- Acknowledgement -->
 						<!-- <strong><span style="font-size: large;"><a name="acknowledgement"></a>Acknowledgement</span></strong> -->
 						<hr>
 
 						<!-- <p>[YOUR_ACKNOWLEDGEMENT_TEXT]<p/> -->
 					</section>
+					
 				</div>
 			</div>
         </div>
